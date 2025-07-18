@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+/* Center align the H1 */
+h1 {
+    text-align: center;  /* Center the text */
+    font-size: 28px;  /* Adjust the font size */
+    margin-bottom: 20px;  /* Space below */
+    width: 100%;  /* Ensure it spans full width */
+    margin-top: 50px;
+    
+}
+
+/* Ensure H1 is properly positioned */
+.main-content h1 {
+    margin-left: 0; /* Reset margin */
+    padding-top: 20px; /* Add space from top */
+}
+
+/* Sidebar Navigation (Left Panel) */
+.sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Sidebar Title */
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    /* text-align: center; */
+}
+
+/* Sidebar Form */
+.sidebar form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar label {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.sidebar input,
+.sidebar select {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+.sidebar button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background: #27ae60;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar button:hover {
+    background: #219150;
+}
+
+/* Main Content (Search Results) */
+.main-content {
+    margin-left: 270px; /* Space for sidebar */
+    padding: 20px;
+    width: calc(100% - 270px);
+    overflow-y: auto;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-left: 30%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #34495e;
+    color: white;
+}
+
+tr:hover {
+    background: #ecf0f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
